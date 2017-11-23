@@ -9,16 +9,13 @@ CONFIG += console
 
 TARGET = Tests
 
-INCLUDEPATH += ../ApplicationLib
-LIBS += -L../ApplicationLib -lApplicationLib
-
 include(../GoogleTest/GoogleTest.pri)
 
 HEADERS += \
     QtTypePrinters.h \
-    Mocks/MockBatteryCell.h
+    DivideExample.h
 
 SOURCES += main.cpp \
-    BatteryTest.cpp \
+    DivideExample.cpp \
     DivideExampleTest.cpp \
     QStringTest.cpp
